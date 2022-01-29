@@ -1,0 +1,29 @@
+body {
+    background-color:#e5e5e5
+    }
+    
+    h1 {
+        font-family: 'Courier New', monospace;
+        color: #344e41;
+    
+    }
+    
+    #letradescricao {
+        font-family:  monospace;
+    }
+    
+    #destacar {
+        font-size: 20px;
+    }
+    
+    #eu2 {
+        background-color: #6b705c;
+    }
+    
+    #mudarcor {
+        color: #6b705c;
+    }
+    
+    #outracor {
+        color: #283618;
+    } 
