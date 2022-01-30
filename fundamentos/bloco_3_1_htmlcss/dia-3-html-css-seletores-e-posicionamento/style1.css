@@ -1,10 +1,10 @@
 body {
-    background-color:#e5e5e5
+    background-image: url(PERFIL1.jpg);
     }
     
     h1 {
         font-family: 'Courier New', monospace;
-        color: #344e41;
+        color: #333d29;
     
     }
     
@@ -27,3 +27,17 @@ body {
     #outracor {
         color: #283618;
     } 
+   #foto {
+       margin-top: -80px;
+       z-index: 1;
+   }
+   #nome1 {
+       position: absolute;
+       overflow: visible;
+       border-top: 5px;
+       z-index: 2;
+   }
+   #corpo {
+       margin-top: 500px;
+       position: absolute;
+   }
