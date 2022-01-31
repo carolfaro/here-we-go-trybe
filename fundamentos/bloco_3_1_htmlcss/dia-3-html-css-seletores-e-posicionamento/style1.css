@@ -1,18 +1,20 @@
 body {
     background-image: url(PERFIL1.jpg);
-    background-size: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     }
     
     h1 {
         font-family: 'Courier New', monospace;
-        color: #333d29;
+        color: #fefae0;
     
     }
     
     #letradescricao {
         font-family:  monospace;
     }
+
     
     #destacar {
         font-size: 20px;
