@@ -11,5 +11,50 @@ body {
     
     }
     #text{
-        margin-top: 300px;
+        margin-top: 150px;
+        font-family: monospace;
     }
+#titulo1{
+    color: #c2c5aa;
+}
+#texto1{
+    color: #c2c5aa;
+}
+#texto2{
+    color: #333d29;
+    font-size: 20px;
+    text-indent: 5px;;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.lista1{
+    color: #c2c5aa;
+    background: #333d29;
+    font-family: monospace;
+    opacity: 0.6;
+}
+.lista2{
+    font-family: monospace;
+    color: #c2c5aa;
+    font-size: 15px;
+}
+#link{
+    margin-top: 50px;;
+    font-family: monospace;
+    color: #c2c5aa;
+    font-size: 20px;
+    background: #7f5539;
+    text-align: center;
+    opacity: 0.8;
+}
+#fim{
+    margin-top: 60px;
+    font-family: monospace;
+    color: #212529;
+    font-size: 15px;
+    text-align: center;
+    background: #457b9d
+}
+#cor{
+    color: #c2c5aa;
+}
