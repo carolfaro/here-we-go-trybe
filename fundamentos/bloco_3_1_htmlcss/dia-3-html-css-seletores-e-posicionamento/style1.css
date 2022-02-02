@@ -8,6 +8,7 @@ body {
         font-family: monospace;
         color: #fefae0;
         font-size: 50px;
+        letter-spacing: 4px;
     
     }
     #text{
@@ -26,6 +27,7 @@ body {
     text-indent: 5px;;
     font-weight: bold;
     letter-spacing: 2px;
+    font-family: monospace;
 }
 .lista1{
     color: #c2c5aa;
