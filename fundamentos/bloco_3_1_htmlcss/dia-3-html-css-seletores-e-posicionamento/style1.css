@@ -2,45 +2,14 @@ body {
     background-image: url(PERFIL1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
     }
     
     h1 {
-        font-family: 'Courier New', monospace;
+        font-family: monospace;
         color: #fefae0;
+        font-size: 50px;
     
     }
-    
-    #letradescricao {
-        font-family:  monospace;
+    #text{
+        margin-top: 300px;
     }
-
-    
-    #destacar {
-        font-size: 20px;
-    }
-    
-    #eu2 {
-        background-color: #6b705c;
-    }
-    
-    #mudarcor {
-        color: #6b705c;
-    }
-    
-    #outracor {
-        color: #283618;
-    } 
- 
-   #nome1 {
-       position: absolute;
-       overflow: visible;
-       z-index: 2;
-       margin-top: 200px;
-       padding-top: 10px;
-
-   }
-   #corpo {
-       margin-top: 500px;
-       position: absolute;
-   }
