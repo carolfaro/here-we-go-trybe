@@ -1,6 +1,13 @@
-const base = 5;
-let height = 8;
-const area = base * height;
-const perimeter = area;
+const a = 8;
+const b = 2;
+const c = 9;
 
-console.log(perimeter);
+let resto = a % 2
+
+
+
+if (a >= 0) {
+    console.log("positivo");
+} else {
+    console.log("negative")
+};
