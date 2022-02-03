@@ -31,3 +31,17 @@ if (resultado === angulo) {
 };
 */
 
+/*
+exercicio 6
+
+let pecacerta = "bishop";
+let pecanova = "dama";
+let posicao = "diagonal";
+let letraminusculapeca = pecanova.toLowerCase(pecanova);
+
+if (letraminusculapeca === pecacerta) {
+    console.log(posicao)
+} else {
+    console.log("error")
+};
+*/
