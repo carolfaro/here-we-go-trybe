@@ -76,3 +76,4 @@ let ehpara = numbera % 2;
 let ehparb = numberb % 2;
 let ehparc = numberc % 2;
 
+/*falta só transformar em número booleano*/
