@@ -46,3 +46,27 @@ if (letraminusculapeca === pecacerta) {
 };
 */
 
+/*
+const numeroa = 20;
+const numerob = 13;
+const numeroc = 21;
+
+if (numeroa % 2 === 0 || numerob % 2 === 0 || numeroc % 2 ===0) {
+    console.log(numeroa % 2 === 0)
+} else {
+    console.log(!numeroa % 2 ===0)
+}
+*/
+
+let valorProduto = 100
+let valorImposto = valorProduto / 10 * 2;
+let valorProdutoTotal = valorProduto + valorImposto;
+let valorVenda = 150;
+
+if (valorProdutoTotal > 0 && valorVenda > 0) {
+    console.log((valorVenda - valorProdutoTotal) * 1000)
+} else {
+    console.log("valores menores que 0");
+}
+
+
