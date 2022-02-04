@@ -46,3 +46,20 @@ if (letraminusculapeca === pecacerta) {
 };
 */
 
+let notaDada = "64%";
+let converteNumber = notaDada.replace("%", "") * 1;
+console.log(converteNumber);
+
+if (converteNumber >= 90) {
+    console.log("Nota A")
+} else if (converteNumber >= 80) {
+    console.log("Nota B")
+} else if (converteNumber >= 70) {
+    console.log("Nota C")
+} else if (converteNumber >= 50) {
+        console.log("Nota D")
+} else if (converteNumber <= 50) {
+    console.log("Nota F")
+} else {
+    console.log("erro")
+}
