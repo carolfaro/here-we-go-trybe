@@ -46,6 +46,9 @@ if (letraminusculapeca === pecacerta) {
 };
 */
 
+/*
+exercicio 7
+
 let notaDada = "64%";
 let converteNumber = notaDada.replace("%", "") * 1;
 console.log(converteNumber);
@@ -63,3 +66,13 @@ if (converteNumber >= 90) {
 } else {
     console.log("erro")
 }
+*/
+
+const numbera = 12;
+const numberb = 54;
+const numberc = 13;
+
+let ehpara = numbera % 2;
+let ehparb = numberb % 2;
+let ehparc = numberc % 2;
+
