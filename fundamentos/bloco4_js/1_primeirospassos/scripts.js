@@ -47,33 +47,26 @@ if (letraminusculapeca === pecacerta) {
 */
 
 /*
-exercicio 7
+const numeroa = 20;
+const numerob = 13;
+const numeroc = 21;
 
-let notaDada = "64%";
-let converteNumber = notaDada.replace("%", "") * 1;
-console.log(converteNumber);
-
-if (converteNumber >= 90) {
-    console.log("Nota A")
-} else if (converteNumber >= 80) {
-    console.log("Nota B")
-} else if (converteNumber >= 70) {
-    console.log("Nota C")
-} else if (converteNumber >= 50) {
-        console.log("Nota D")
-} else if (converteNumber <= 50) {
-    console.log("Nota F")
+if (numeroa % 2 === 0 || numerob % 2 === 0 || numeroc % 2 ===0) {
+    console.log(numeroa % 2 === 0)
 } else {
-    console.log("erro")
+    console.log(!numeroa % 2 ===0)
 }
 */
 
-const numbera = 12;
-const numberb = 54;
-const numberc = 13;
+let valorProduto = 100
+let valorImposto = valorProduto / 10 * 2;
+let valorProdutoTotal = valorProduto + valorImposto;
+let valorVenda = 150;
 
-let ehpara = numbera % 2;
-let ehparb = numberb % 2;
-let ehparc = numberc % 2;
+if (valorProdutoTotal > 0 && valorVenda > 0) {
+    console.log((valorVenda - valorProdutoTotal) * 1000)
+} else {
+    console.log("valores menores que 0");
+}
 
-/*falta só transformar em número booleano*/
+
