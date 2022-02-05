@@ -72,18 +72,24 @@
 
 // console.log(impares);
 
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+// let numeroMaior = numbers[0];
+
+// for (let index = 1; index < numbers.length; index += 1) {
+//     if (numbers[index] > numeroMaior) {
+//         numeroMaior = numbers[index];
+//     }
+// }
+// console.log(numeroMaior);
+
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let maior = 0;
-let menor = 0;
+
+let numeroMenor = numbers[0];
 
 for (let index = 0; index < numbers.length; index += 1) {
-if (numbers[index] > maior) {
-maior = numbers[index]
+    if (numbers[index] < numeroMenor) {
+        numeroMenor = numbers[index];
+    }
 }
-if (maior > numbers[index]) {
-menor = numbers[index]
-}
-
-}
-console.log(maior);
-console.log(menor);
+console.log(numeroMenor);
