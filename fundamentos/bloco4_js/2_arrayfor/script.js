@@ -94,6 +94,13 @@
 // }
 // console.log(numeroMenor);
 
+// let numeros12a25 = [];
+
+// for (let cont = 1; cont <= 50; cont += 1) {
+//     numeros12a25.push(cont);
+// }
+
+
 let numeros12a25 = [];
 
 for (let cont = 1; cont <= 50; cont += 1) {
@@ -101,3 +108,11 @@ for (let cont = 1; cont <= 50; cont += 1) {
 }
 
 console.log(numeros12a25);
+
+let numerospor2 = [];
+
+for(let index = 0; index < numeros12a25.length; index +=1) {
+    numerospor2.push(numeros12a25[index] / 2)
+}
+
+console.log(numerospor2);
