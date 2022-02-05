@@ -101,18 +101,32 @@
 // }
 
 
-let numeros12a25 = [];
+// let numeros12a25 = [];
 
-for (let cont = 1; cont <= 50; cont += 1) {
-    numeros12a25.push(cont);
+// for (let cont = 1; cont <= 50; cont += 1) {
+//     numeros12a25.push(cont);
+// }
+
+// console.log(numeros12a25);
+
+// let numerospor2 = [];
+
+// for(let index = 0; index < numeros12a25.length; index +=1) {
+//     numerospor2.push(numeros12a25[index] / 2)
+// }
+
+// console.log(numerospor2);
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+for(let index = 1; index < numbers.length; index +=1) {
+    for (let index2 = 0; index2 < index; index2 += 1) {
+        if (numbers[index] < numbers[index2]) {
+            let posicaoCrescente = numbers[index];
+            numbers[index] = numbers[index2];
+            numbers[index2] = posicaoCrescente;
+        }
+    }
 }
 
-console.log(numeros12a25);
-
-let numerospor2 = [];
-
-for(let index = 0; index < numeros12a25.length; index +=1) {
-    numerospor2.push(numeros12a25[index] / 2)
-}
-
-console.log(numerospor2);
+console.log(numbers)
