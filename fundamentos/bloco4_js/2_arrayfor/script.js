@@ -83,13 +83,21 @@
 // }
 // console.log(numeroMaior);
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-let numeroMenor = numbers[0];
+// let numeroMenor = numbers[0];
 
-for (let index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] < numeroMenor) {
-        numeroMenor = numbers[index];
-    }
+// for (let index = 0; index < numbers.length; index += 1) {
+//     if (numbers[index] < numeroMenor) {
+//         numeroMenor = numbers[index];
+//     }
+// }
+// console.log(numeroMenor);
+
+let numeros12a25 = [];
+
+for (let cont = 1; cont <= 50; cont += 1) {
+    numeros12a25.push(cont);
 }
-console.log(numeroMenor);
+
+console.log(numeros12a25);
