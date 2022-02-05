@@ -132,6 +132,7 @@
 // console.log(numbers)
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numbers2 =[];
 
 for(let index = 1; index < numbers.length; index +=1) {
     for (let index2 = 0; index2 < index; index2 += 1) {
@@ -143,5 +144,14 @@ for(let index = 1; index < numbers.length; index +=1) {
     }
 }
 
-console.log(numbers)
-
+for(let index = 1; index < numbers.length; index +=1) {
+    for (let index2 = 0; index2 < index; index2 += 1) {
+        if (numbers[index] > numbers[index2]) {
+            let multiplicacao = numbers[index] * numbers[index2];
+            multiplicacao = numbers[index2];
+            numbers[index2] = multiplicacao
+            numbers2.push(multiplicacao)
+        }
+    }
+}
+console.log(numbers2);
