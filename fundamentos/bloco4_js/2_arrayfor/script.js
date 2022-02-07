@@ -131,27 +131,53 @@
 
 // console.log(numbers)
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let numbers2 =[];
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let numbers2 =[];
 
-for(let index = 1; index < numbers.length; index +=1) {
-    for (let index2 = 0; index2 < index; index2 += 1) {
-        if (numbers[index] > numbers[index2]) {
-            let posicaoCrescente = numbers[index];
-            numbers[index] = numbers[index2];
-            numbers[index2] = posicaoCrescente;
-        }
-    }
-}
+// for(let index = 1; index < numbers.length; index +=1) {
+//     for (let index2 = 0; index2 < index; index2 += 1) {
+//         if (numbers[index] > numbers[index2]) {
+//             let posicaoCrescente = numbers[index];
+//             numbers[index] = numbers[index2];
+//             numbers[index2] = posicaoCrescente;
+//         }
+//     }
+// }
 
-for(let index = 1; index < numbers.length; index +=1) {
-    for (let index2 = 0; index2 < index; index2 += 1) {
-        if (numbers[index] > numbers[index2]) {
-            let multiplicacao = numbers[index] * numbers[index2];
-            multiplicacao = numbers[index2];
-            numbers[index2] = multiplicacao
-            numbers2.push(multiplicacao)
-        }
-    }
+// for(let index = 1; index < numbers.length; index +=1) {
+//     for (let index2 = 0; index2 < index; index2 += 1) {
+//         if (numbers[index] > numbers[index2]) {
+//             let multiplicacao = numbers[index] * numbers[index2];
+//             multiplicacao = numbers[index2];
+//             numbers[index2] = multiplicacao
+//             numbers2.push(multiplicacao)
+//         }
+//     }
+// }
+// console.log(numbers2);
+
+// let fatorial10 = 10;
+
+// for (let index1 = 1; index1 <= 10; index1 += 1) {
+// for (let index2 = 2; index2 <= 10; index2 += 1) {
+//     fatorial10 = index1 * index2;
+// }
+// console.log(fatorial10)
+// }
+
+
+// let fatorial10 = 10;
+
+// for (let index1 = 1; index1 <= 10; index1 += 1) {
+// for (let index2 = 2; index2 <= 10; index2 += 1) {
+//     fatorial10 = index1;
+//     index1 = index1 * index2
+// }
+// console.log(fatorial10)
+// }
+
+let fatorial = 1;
+for (let index = 10; index > 0; index += 1) {
+    fatorial *= index
 }
-console.log(numbers2);
+console.log(fatorial)
