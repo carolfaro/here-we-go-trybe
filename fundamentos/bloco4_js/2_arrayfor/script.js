@@ -182,8 +182,33 @@
 // }
 // console.log(fatorial)
 
-let word = "tryber";
+// let word = "tryber";
 
-let inverte = word.split("").reverse().join("");
+// let inverte = word.split("").reverse().join("");
 
-console.log(inverte);
+// console.log(inverte);
+
+// abaixo exercício 2 consultado em :https://pt.stackoverflow.com/questions/5943/como-inverter-uma-string-em-javascript
+
+// let word = "tryber";
+// let inverte = word.split("").reverse().join("");
+
+// console.log(inverte)
+
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+let maiorPalavra = array[0];
+let menorPalavra = array[0];
+
+for (let index = 0; index < array.length; index += 1) {
+    if ( array[index] > maiorPalavra) {
+        maiorPalavra = array[index];
+    }
+}
+
+for (let index = 0; index < array.length; index += 1) {
+    if ( array[index] < menorPalavra) {
+        menorPalavra = array[index];
+    }
+}
+
+console.log(maiorPalavra)

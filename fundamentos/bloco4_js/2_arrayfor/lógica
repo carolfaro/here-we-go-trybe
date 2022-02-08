@@ -1,1 +1,14 @@
  Math.max.apply(array)
+
+ 3.
+ let array = ['java', 'javascript', 'python', 'html', 'css'];
+
+Escreva dois algoritmos: um que retorne a maior palavra deste array e outro que retorne a menor. 
+Considere o número de caracteres de cada palavra.
+
+1. um código que identifica o tamanho de cacteres de cada string dentro do array
+2. uma variavel para armazenar a maior palavra
+3. uma variavel para armazenar a menor palavra
+
+
+ 
