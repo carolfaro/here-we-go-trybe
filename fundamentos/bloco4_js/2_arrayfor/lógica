@@ -1,14 +1,10 @@
- Math.max.apply(array)
+número primo é apenas divisivel por 1 e por ele mesmo como o 3
 
- 3.
- let array = ['java', 'javascript', 'python', 'html', 'css'];
+3 / 1 = 3
+3 / 3 = 0
 
-Escreva dois algoritmos: um que retorne a maior palavra deste array e outro que retorne a menor. 
-Considere o número de caracteres de cada palavra.
-
-1. um código que identifica o tamanho de cacteres de cada string dentro do array
-2. uma variavel para armazenar a maior palavra
-3. uma variavel para armazenar a menor palavra
+numero % 1 === numero
+numero % numero === 0
 
 
  

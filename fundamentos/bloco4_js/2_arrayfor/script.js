@@ -198,21 +198,32 @@
 
 // let menorPalavra = array[0];
 
-let array = ['java', 'javascript', 'python', 'html', 'css'];
-let maiorPalavra = array[0];
-let menorPalavra = array[0];
+// let array = ['java', 'javascript', 'python', 'html', 'css'];
+// let maiorPalavra = array[0];
+// let menorPalavra = array[0];
 
 
-for (let index = 0; index < array.length; index += 1) {
-    if (array[index].length > maiorPalavra.length) {
-        maiorPalavra = array[index];
+// for (let index = 0; index < array.length; index += 1) {
+//     if (array[index].length > maiorPalavra.length) {
+//         maiorPalavra = array[index];
+//     }
+// }
+
+// for (let index = 0; index < array.length; index += 1) {
+//     if (array[index].length < menorPalavra.length) {
+//         menorPalavra = array[index];
+//     }
+// }
+// console.log(menorPalavra);
+// console.log(maiorPalavra);
+
+let arrayPrimos = [];
+// let menorPrimo = 1;
+// let maiorPrimo = 1;
+
+for (let cont = 1; cont <= 50; cont += 1) {
+    if (cont % 1 === cont && cont % cont === 0 {
+        arrayPrimos.push(cont);
     }
 }
-
-for (let index = 0; index < array.length; index += 1) {
-    if (array[index].length < menorPalavra.length) {
-        menorPalavra = array[index];
-    }
-}
-console.log(menorPalavra);
-console.log(maiorPalavra);
+console.log(arrayPrimos);
