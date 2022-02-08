@@ -221,9 +221,17 @@ let arrayPrimos = [];
 // let menorPrimo = 1;
 // let maiorPrimo = 1;
 
-for (let cont = 1; cont <= 50; cont += 1) {
-    if (cont % 1 === cont && cont % cont === 0 {
-        arrayPrimos.push(cont);
-    }
-}
-console.log(arrayPrimos);
+// for (let cont = 1; cont <= 50; cont += 1) {
+//     if (cont % 1 === cont && cont % cont === 0 {
+//         arrayPrimos.push(cont);
+//     }
+// }
+// console.log(arrayPrimos);
+
+let info = {
+    personagem: 'Margarida',
+    origem: 'Pato Donald',
+    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+  };
+
+  console.log("Bem vinda, " + info.personagem);
