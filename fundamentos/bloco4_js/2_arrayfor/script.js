@@ -248,14 +248,36 @@ let arrayPrimos = [];
 //       console.log(key)
 //   }
 
+//   let info = {
+//     personagem: 'Margarida',
+//     origem: 'Pato Donald',
+//     nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+//   };
+
+//   info['recorrente'] = 'Sim';
+
+//   for (let key in info) {
+//       console.log(info[key])
+//   }
+
   let info = {
     personagem: 'Margarida',
     origem: 'Pato Donald',
     nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+    recorrente: 'Sim'
   };
 
-  info['recorrente'] = 'Sim';
+  let info2 = {
+    personagem: 'Tio Patinhas',
+    origem: 'Christmas on Bear Mountain, Dells Four Color Comics #178',
+    nota: 'O último MacPatinhas',
+    recorrente: 'Sim'
+  };
 
-  for (let key in info) {
-      console.log(info[key])
+ for (let index in info) {
+  if (info[index] === info2[index]) {
+      console.log('igual')
+  } else {
+      console.log(info[index] + " e " + info2[index])
   }
+}
