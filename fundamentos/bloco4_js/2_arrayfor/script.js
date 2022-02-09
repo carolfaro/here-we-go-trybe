@@ -217,7 +217,7 @@
 // console.log(menorPalavra);
 // console.log(maiorPalavra);
 
-let arrayPrimos = [];
+// let arrayPrimos = [];
 // let menorPrimo = 1;
 // let maiorPrimo = 1;
 
@@ -320,3 +320,5 @@ let arrayPrimos = [];
   )
 
   console.log(leitor);
+
+  console.log("Julia tem 2 livros favoritos: " + leitor.livrosFavoritos[0].titulo + leitor.livrosFavoritos[1].titulo);
