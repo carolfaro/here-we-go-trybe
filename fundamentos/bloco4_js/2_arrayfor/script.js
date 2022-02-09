@@ -358,21 +358,81 @@
 
 
 
-let inteiros = [2, 3, 6, 7, 10, 1];
-let resultado = [];
+// let inteiros = [2, 3, 6, 7, 10, 1];
+// let resultado = [];
 
-function maiorIndex (inteiros) {
-  for (let index = 1; index < inteiros.length; index += 1) {
-      for (let index2 = 0; index2 < index; index += 1) {
-          if(inteiros[index] < inteiros[index2]) {
-              let position = inteiros[index];
-              inteiros[index] = inteiros[index2];
-              inteiros[index2] = position
-          }
-      }
-  } 
-  return resultado.push([inteiros.length-1]);
+
+//   for (let index = 1; index < inteiros.length; index += 1) {
+//       for (let index2 = 0; index2 < index; index += 1) {
+//           if(inteiros[index] < inteiros[index2]) {
+//               let position = inteiros[index];
+//               inteiros[index] = inteiros[index2];
+//               inteiros[index2] = position;
+//               resultado.push(position);
+//           }
+//         }
+//     }
+
+// console.log(resultado);
+
+
+
+
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+// for (let index = 1; index < numbers.length; index += 1) {
+//   for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+//     if (numbers[index] < numbers[secondIndex]) {
+//       let position = numbers[index];
+//       numbers[index] = numbers[secondIndex];
+//       numbers[secondIndex] = position;
+//     }
+//   }
+// }
+
+// console.log(numbers);
+ 
+
+
+// BUBBLE SORT !!!! BUBBLE SORT //
+
+// let numerosTeste = [2, 3, 6, 7, 10, 1];
+
+// for (let index = 1; index < numerosTeste.length; index += 1) {
+//     for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+//       if (numerosTeste[index] < numerosTeste[secondIndex]) {
+//         let position = numerosTeste[index];
+//         numerosTeste[index] = numerosTeste[secondIndex];
+//         numerosTeste[secondIndex] = position;
+//       }
+//     }
+//   }
+  
+//   console.log(numerosTeste[numerosTeste.length-1]);
+// OBS: numerosTeste foi atualizado em ordem de tamanho e numerosTeste[numerosTeste.length-1] mostra o maior índice desse array
+//
+
+
+let numerosTeste = [2, 3, 6, 7, 11, 1];
+let maiorNumero = numerosTeste[0];
+let menorNumero = numerosTeste[0];
+
+
+function acharMaiorEmenor (numerosTeste) {
+for (let index = 0; index < numerosTeste.length; index += 1) {
+    if (numerosTeste[index] > maiorNumero) {
+        maiorNumero = numerosTeste[index];
+    }
+}
+
+for (let index = 0; index < numerosTeste.length; index += 1) {
+    if (numerosTeste[index] < menorNumero) {
+        menorNumero = numerosTeste[index];
+    }
+}
+console.log(maiorNumero);
+console.log(menorNumero);
 
 }
 
-console.log(maiorIndex(inteiros));
+console.log(acharMaiorEmenor(numerosTeste));
