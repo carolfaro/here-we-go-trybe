@@ -297,28 +297,51 @@
 
 //   console.log("O livro favorito de " + leitor.nome + " " + leitor.sobrenome + " se chama " + leitor.livrosFavoritos[0].titulo);
 
-  let leitor = {
-    nome: 'Julia',
-    sobrenome: 'Pessoa',
-    idade: 21,
-    livrosFavoritos: [
-      {
-        titulo: 'O Pior Dia de Todos',
-        autor: 'Daniela Kopsch',
-        editora: 'Tordesilhas',
-      },
-    ],
-  };
+//   let leitor = {
+//     nome: 'Julia',
+//     sobrenome: 'Pessoa',
+//     idade: 21,
+//     livrosFavoritos: [
+//       {
+//         titulo: 'O Pior Dia de Todos',
+//         autor: 'Daniela Kopsch',
+//         editora: 'Tordesilhas',
+//       },
+//     ],
+//   };
 
-  leitor.livrosFavoritos.push(
-      {
+//   leitor.livrosFavoritos.push(
+//       {
 
-    titulo: 'Harry Potter e o Prisioneiro de Azkaban',
-    autor: 'JK Rowling',
-    editor: 'Rocco',
-      }
-  )
+//     titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+//     autor: 'JK Rowling',
+//     editor: 'Rocco',
+//       }
+//   )
 
-  console.log(leitor);
+//   console.log(leitor);
 
-  console.log("Julia tem 2 livros favoritos: " + leitor.livrosFavoritos[0].titulo + leitor.livrosFavoritos[1].titulo);
+//   console.log("Julia tem 2 livros favoritos: " + leitor.livrosFavoritos[0].titulo + leitor.livrosFavoritos[1].titulo);
+
+//FUNÇÕES
+
+// let word = "tryber";
+
+// let inverte = word.split("").reverse().join("");
+
+
+let palavra = "arara";
+let inverte = palavra.split("").reverse().join("");
+
+console.log(inverte);
+
+function palindromo (palavra) {
+    if (palavra === inverte) {
+        return true;
+
+    } else {
+        return false
+    }
+}
+
+console.log(palindromo ("arara"));
