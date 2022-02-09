@@ -412,27 +412,88 @@
 // OBS: numerosTeste foi atualizado em ordem de tamanho e numerosTeste[numerosTeste.length-1] mostra o maior índice desse array
 //
 
+// MAIOR VALOR //
+// let numerosTeste = [2, 3, 6, 7, 11, 1];
+// let maiorNumero = numerosTeste[0];
+// let menorNumero = numerosTeste[0];
 
-let numerosTeste = [2, 3, 6, 7, 11, 1];
-let maiorNumero = numerosTeste[0];
-let menorNumero = numerosTeste[0];
+
+// function acharMaiorEmenor (numerosTeste) {
+// for (let index = 0; index < numerosTeste.length; index += 1) {
+//     if (numerosTeste[index] > maiorNumero) {
+//         maiorNumero = numerosTeste[index];
+//     }
+// }
+
+// for (let index = 0; index < numerosTeste.length; index += 1) {
+//     if (numerosTeste[index] < menorNumero) {
+//         menorNumero = numerosTeste[index];
+//     }
+// }
+// console.log(maiorNumero[index]);
+// console.log(menorNumero[index]);
+
+// }
+
+// console.log(acharMaiorEmenor(numerosTeste));
+
+// let numeros = [2, 3, 6, 7, 10, 1];
+
+// function indicaMaior (numeros) {
+//   let indiceM = 0;
+//   for (let index in numeros) {
+//       if (numeros[indicaMaior] < numeros[index]) {
+//           indiceM = index;
+//       }
+//   }
+// return indiceM;
+// }
+
+// console.log(indicaMaior([2, 3, 6, 7, 10, 1]));
+
+//FUNÇÃO SIMPLES CARRO-----------------------------------------
+
+// var statusCarro = "desligado";
+// var aceleracao = 0;
+// var rotacaoVolante = 0;
+
+// function ligarDesligar () {
+// if (statusCarro === "desligado") {
+//     statusCarro = "ligado";
+// } else {
+// statusCarro = "desligado";
+// }
+// return statusCarro
+// }
+
+// function acelerar (incremento) {
+//     aceleracao = aceleracao + incremento;
+
+//     return "acelrando a " + aceleracao + "!";
+
+// }
+
+// function frear (decremento) {
+// aceleracao = aceleracao - decremento;
+
+// return "desacelerando a " + aceleracao + "!";
+// }
+
+// function giraVolante (anguloRotacao) {
+//     rotacaoVolante = anguloRotacao;
+
+//     return rotacaoVolante + "!";
+// }
 
 
-function acharMaiorEmenor (numerosTeste) {
-for (let index = 0; index < numerosTeste.length; index += 1) {
-    if (numerosTeste[index] > maiorNumero) {
-        maiorNumero = numerosTeste[index];
-    }
-}
+// // console.log(ligarDesligar())
 
-for (let index = 0; index < numerosTeste.length; index += 1) {
-    if (numerosTeste[index] < menorNumero) {
-        menorNumero = numerosTeste[index];
-    }
-}
-console.log(maiorNumero);
-console.log(menorNumero);
+// // console.log(acelerar(30));
 
-}
+// // console.log(frear(10));
 
-console.log(acharMaiorEmenor(numerosTeste));
+// // console.log(giraVolante(30));
+
+
+// console.log(acelerar(30));
+// console.log(aceleracao);
