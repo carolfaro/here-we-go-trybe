@@ -515,14 +515,40 @@
 
 // MENOR VALOR // exercício 3
 
-function qualEhOMenor (numeros) {
-    let indiceMenor = 0;
-    for (let index in numeros) {
-        if (numeros[indiceMenor] > numeros[index]) {
-            indiceMenor = index;
-        }
-    }
-    return indiceMenor
-}
+// function qualEhOMenor (numeros) {
+//     let indiceMenor = 0;
+//     for (let index in numeros) {
+//         if (numeros[indiceMenor] > numeros[index]) {
+//             indiceMenor = index;
+//         }
+//     }
+//     return indiceMenor
+// }
 
-console.log(qualEhOMenor([2, 4, 6, 7, 10, 0, -3]));
+// console.log(qualEhOMenor([2, 4, 6, 7, 10, 0, -3]));
+
+// MAIOR QTDE DE CARACETERES // exercicio 4
+// if (maiorN[0] < arrayNomes[value])
+
+// function maiorNome (arrayNomes) {
+//     let maiorN = [arrayNomes[0]];
+//     for (let index in arrayNomes) {
+//         if (maiorN.length < arrayNomes[index].length) {
+//             maiorN = arrayNomes[index];
+//         }
+//     }
+//     return maiorN
+// }
+
+// console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+
+// function someN (numeroN) {
+//     let numeroM = 0;
+//     for (let index = 0; index <= numeroN; index += 1) {
+//         numeroM = numeroM + index;
+//     }
+//     return numeroM
+//     }
+
+// console.log(someN(5));
