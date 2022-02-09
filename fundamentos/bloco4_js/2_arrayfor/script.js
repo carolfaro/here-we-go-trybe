@@ -273,7 +273,8 @@
 //     nota: 'O último MacPatinhas',
 //     recorrente: 'Sim'
 //   };
-
+//
+//FOR IN INDEX
 //  for (let index in info) {
 //   if (info[index] === info2[index]) {
 //       console.log('igual')
@@ -329,19 +330,49 @@
 
 // let inverte = word.split("").reverse().join("");
 
+//PALÍNDROMO
+// let palavra = "arara";
+// let inverte = palavra.split("").reverse().join("");
 
-let palavra = "arara";
-let inverte = palavra.split("").reverse().join("");
+// console.log(inverte);
 
-console.log(inverte);
+// function palindromo (palavra) {
+//     if (palavra === inverte) {
+//         return true;
 
-function palindromo (palavra) {
-    if (palavra === inverte) {
-        return true;
+//     } else {
+//         return false
+//     }
+// }
 
-    } else {
-        return false
-    }
+// console.log(palindromo ("arara"));
+//
+//
+// for (let index in info) {
+    //   if (info[index] === info2[index]) {
+    //       console.log('igual')
+    //   } else {
+    //       console.log(info[index] + " e " + info2[index])
+    //   }
+    // }
+
+
+
+let inteiros = [2, 3, 6, 7, 10, 1];
+let resultado = [];
+
+function maiorIndex (inteiros) {
+  for (let index = 1; index < inteiros.length; index += 1) {
+      for (let index2 = 0; index2 < index; index += 1) {
+          if(inteiros[index] < inteiros[index2]) {
+              let position = inteiros[index];
+              inteiros[index] = inteiros[index2];
+              inteiros[index2] = position
+          }
+      }
+  } 
+  return resultado.push([inteiros.length-1]);
+
 }
 
-console.log(palindromo ("arara"));
+console.log(maiorIndex(inteiros));
