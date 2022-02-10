@@ -542,6 +542,7 @@
 
 // console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
 
+//SOMA DOS NUMEROS ATÉ 5// exercicio 6
 
 // function someN (numeroN) {
 //     let numeroM = 0;
@@ -552,3 +553,6 @@
 //     }
 
 // console.log(someN(5));
+
+
+
