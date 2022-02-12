@@ -7,3 +7,10 @@ creatH1.className = "creat-h1";
 creatH1.innerText = textoH1;
 
 tagBody.appendChild(creatH1);
+
+let creatMain = document.createElement('main');
+creatMain.className = 'main-content';
+
+tagBody.appendChild(creatMain);
+
+console.log(creatMain);
