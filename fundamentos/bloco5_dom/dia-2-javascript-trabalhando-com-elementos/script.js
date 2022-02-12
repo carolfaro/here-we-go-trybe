@@ -3,7 +3,7 @@ let textoH1 = "Exercício 5.2 - JavaScript DOM";
 let tagBody = document.querySelector('body');
 
 let creatH1 = document.createElement('h1');
-creatH1.className = "creat-h1";
+creatH1.className = "title";
 creatH1.innerText = textoH1;
 tagBody.appendChild(creatH1);
 
@@ -45,7 +45,12 @@ for (let index = 0; index < listNumbers.length; index += 1){
 for (let index = 1; index <= 3; index += 1) {
     let creatH3 = document.createElement('h3');
     creatH3.innerHTML =  index;
+    creatH3.className ='description';
     creatMain.appendChild(creatH3);
 }
 
+let removeSection2 = document.getElementsByClassName('section2')[0];
+creatMain.removeChild('removeSection2');
 
+const mudaCor = document.getElementsByClassName('right-content')[0];
+mudaCor.style.marginRight= 'auto';
