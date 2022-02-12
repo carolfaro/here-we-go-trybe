@@ -19,3 +19,17 @@ let creatSection = document.createElement('section');
 creatSection.className = 'center-content';
 
 creatMain.appendChild(creatSection);
+
+let creatP = document.createElement('p');
+
+creatSection.appendChild(creatP);
+
+let creatSection2 = document.createElement('section');
+creatSection2.className = 'left-content';
+
+creatMain.appendChild(creatSection2);
+
+let creatSection3 = document.createElement('section');
+creatSection3.className = 'right-content';
+
+creatMain.appendChild(creatSection3);
