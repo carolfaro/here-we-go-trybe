@@ -14,3 +14,8 @@ creatMain.className = 'main-content';
 tagBody.appendChild(creatMain);
 
 console.log(creatMain);
+
+let creatSection = document.createElement('section');
+creatSection.className = 'center-content';
+
+creatMain.appendChild(creatSection);
