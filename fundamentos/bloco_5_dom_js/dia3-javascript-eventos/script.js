@@ -14,19 +14,42 @@ function createDaysOfTheWeek() {
   createDaysOfTheWeek();
   
 const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
-let ulDays = document.querySelector("#days");
+
 
 function creatDaysMonth () {
+  let ulDays = document.querySelector("#days");
+
     for (let index = 0; index < dezDaysList.length; index += 1 ) {
         let creatLi = document.createElement('li');
-        creatLi.innerHTML = dezDaysList[index];
-        creatLi.className = 'day';
-        ulDays.appendChild(creatLi);
+        let indexDay = dezDaysList[index];
+
+        if (indexDay === 24 | indexDay === 31) {
+          creatLi.className = 'day holiday';
+          creatLi.innerHTML = indexDay;
+          ulDays.appendChild(creatLi);
+
+        } else if (indexDay === 4 | indexDay === 11 | indexDay === 18) {
+          creatLi.className = 'day friday';
+          creatLi.innerHTML = indexDay;
+          ulDays.appendChild(creatLi);
+        } else if (indexDay === 25) {
+          creatLi.className = 'day holiday friday'
+          creatLi.innerHTML = indexDay;
+          ulDays,appendChild(creatLi);
+        } else {
+          creatLi.className = 'day';
+          creatLi.innerHTML = indexDay;
+          ulDays.appendChild(creatLi);
+        }
+      }
     }
+       
+
+creatDaysMonth();
+
+function holiday (feriados) {
+  
+
 }
 
-creatDaysMonth()
-
-let liDay = document.querySelectorAll('.day');
-
-console.log(liDay);
+console.log(ulDays)
