@@ -1,3 +1,7 @@
 #escolha {
     font-family: monospace;
 }
+.h3 {
+    text-decoration: line-through;
+    display: inline;
+}
