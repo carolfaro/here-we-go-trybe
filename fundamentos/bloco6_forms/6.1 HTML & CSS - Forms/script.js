@@ -28,7 +28,7 @@ btnErase.addEventListener('click', function(){
 
 // w3schools.com/jsref/event_preventdefault.asp#:~:text=The%20preventDefault()%20method%20cancels,link%20from%20following%20the%20URL
 
-//recarregar a página sem pegar os dados:
+//recarregar a página sem pegar os dados e começar do 0:
 //https://developer.mozilla.org/pt-BR/docs/Web/API/Location/reload
 
 
