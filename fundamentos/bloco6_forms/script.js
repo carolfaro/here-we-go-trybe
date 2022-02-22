@@ -30,3 +30,5 @@ btnErase.addEventListener('click', function(){
 
 //recarregar a página sem pegar os dados:
 //https://developer.mozilla.org/pt-BR/docs/Web/API/Location/reload
+
+
