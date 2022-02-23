@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrybeTrip</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+</head>
+<body>
+    <header>
+<h1> Vem viajar com a Trybe</h1>
+<h3 id="" class="h3">Prometemos não te dar projetos durante a viagem!</h3>
+
+    </header>
+<main>
+<form action="" method="GET">
+    <br>
+    <label for="input-name">Nome: </label>
+    <input type="text" size=10 maxlength=30 placeholder="digite seu nome" class="" value="" name="nome" id="input-name">
+    <br>
+    <br>
+    <label for="input-email">E-mail: </label><input type="email" size=10 maxlength="50" name="email" id="input-email" placeholder="adivinha?">
+    <br>
+    <br>
+    <p id="escolha"> Escolha um destino:</p>
+    <br>
+    <label id="place1"><input type="radio" id="place1" name="destiny" value=""> Qualquer destino do Brasil e do Mundo class custeado 97% por você.</label>
+    <label id="place2"><input type="radio" id="place2" name="destiny" value=""> Qualquer camarote, de qualquer festa a sua escolha em São Paulo acompanhado de um paulistano. </label>
+    <label id="place3"><input type="radio" id="place3" name="destiny" value=""> Qualquer destino de Uber se você conseguir pegar um.</label>
+    <br>
+    <br>
+    <p> Por que você deveria deveria ganhar nosso concurso? <br>
+    Escreva no mínimo em 10.000 palavras e no máximo em 30.970.</p>  
+    <textarea name="why" id="text-area2" maxlength="500" cols="60" rows="10"></textarea> 
+    <br>
+    <br>
+    <label id="datepicker"> Data:</label>  <input id="datepicker" type="date" value="" name="date2" value="">
+    <br>
+    <br>
+    <label id="checkbox">Gostaria de receber outras oportunidades incríveis como essa oferecidas pela Trybe?</label>
+    <input type="checkbox" name="promotion" id="checkbox">
+    <br>
+    <label id="ok">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+    <input type="checkbox" name="image" id="checkbox" checked>
+    <br>
+    <br>
+    <button type="submit" id="send">#partiu!</button>
+    <br> 
+    <br>
+    <button type="submit" id="review">Errei tudo</button>
+
+</form>
+
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+<script src="pikaday.js"></script>
+</html>
