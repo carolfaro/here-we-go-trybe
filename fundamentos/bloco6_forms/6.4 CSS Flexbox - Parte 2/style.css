@@ -38,3 +38,9 @@ body {
   list-style: none;
   margin-right: 10px;
 }
+.header-container >.menu-container:nth-child(1) {
+  order: 2;
+}
+.header-container >.logo-container:nth-child(2) {
+  order: 1;
+}
