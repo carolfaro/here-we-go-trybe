@@ -82,6 +82,7 @@ const average = (numbers) => {
     aprovado(); 
 
     // função construtora de objetos:
+    // sem classe
 
    const livro = function(nome, editora, paginas) {
      gnome = nome,
@@ -102,3 +103,22 @@ const average = (numbers) => {
    const livro1 = new livro('cem anos de solidão', 'cia das letras', 400);
    console.log(livro1.getNome());
    
+   // com classe
+
+   class livroB {
+    constructor(name, author, price) {
+      this.name = name,
+      this.author = author,
+      this.price = price
+    }
+    sayTitle() {
+      console.log(`Título: ${this.name}`)
+    }
+    textBook() {
+      console.log(`${this.name} é um livro do autor ${this.author} e está à venda por ${this.price}`)
+    }
+   };
+
+   const livro2 = new livroB('O retrato de Dorian Gray', 'Oscar Wilde', 50)
+   livro2.sayTitle()
+   livro2.textBook()
