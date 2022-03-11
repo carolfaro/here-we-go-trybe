@@ -66,3 +66,39 @@ const average = (numbers) => {
   };
 
   // uma condicional por vez.
+
+// 
+
+  function aprovado () {
+    estudantes.forEach((estudante) => {
+    if (estudante.status >= 80 && estudante.status < 100){
+    estudante.status = 100;
+    } else if (estudante.status < 80){
+    estudante.status = 80;
+    }
+    console.log(`Olá ${estudante.nome}, parabéns por ter conseguido ${estudante.status}% no projeto ${estudante.projeto}`);
+    })
+    }
+    aprovado(); 
+
+    // função construtora de objetos:
+
+   const livro = function(nome, editora, paginas) {
+     gnome = nome,
+     geditora = editora,
+     gpaginas = paginas,
+
+      this.getNome = function() {
+        return gnome;
+      }
+      this.getEditora = function() {
+        return geditora;
+      }
+      this.getPaginas = function() {
+        return gpaginas;
+      }  
+   }
+
+   const livro1 = new livro('cem anos de solidão', 'cia das letras', 400);
+   console.log(livro1.getNome());
+   
