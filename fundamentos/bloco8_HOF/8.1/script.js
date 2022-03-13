@@ -31,12 +31,16 @@
 // para executar chamamos newemployes executando creatregister
 
 
-  //2. Desenvolva uma HOF que retorna o resultado de um sorteio. 
-  //Esta HOF irá gerar um número aleatório entre 1 e 5 recebendo como parâmetros o número apostado 
-  //e uma função que checa se o número apostado é igual ao número sorteado. O retorno da sua HOF deve
+  // 2. Desenvolva uma HOF que retorna o resultado de um sorteio. 
+  // Esta HOF irá gerar um número aleatório entre 1 e 5 recebendo como parâmetros o número apostado 
+  // e uma função que checa se o número apostado é igual ao número sorteado. O retorno da sua HOF deve
   // ser uma string (Ex: "Tente novamente" ou "Parabéns você ganhou").
 
  // exercico 2
+ // 2 - Desenvolva uma HOF que retorna o resultado de um sorteio. 
+ // Esta HOF irá gerar um número aleatório entre 1 e 5 recebendo como parâmetros o número apostado e 
+ // uma função que checa se o número apostado é igual ao número sorteado. 
+ // O retorno da sua HOF deve ser uma string (Ex: "Tente novamente" ou "Parabéns você ganhou").
 const numberCheker = (myNumber, numberBet) => myNumber === numberBet;
 
 // constante acima faz a checagem entre o numero apostado e numero q saiu no sorteio, checando se é true;
@@ -55,3 +59,56 @@ const raffleResult = (myNumber, callback) => {
 console.log(raffleResult(3, numberCheker));
 
 // executa a funcao do resultado com parametros meu numero e a funcao de callback
+
+
+//3 - Crie uma HOF que receberá três parâmetros. O primeiro será um array de respostas corretas (Gabarito), 
+//o segundo será um array de respostas a serem verificadas (respostas da pessoa estudante)
+//e o terceiro é uma função que checa se as respostas estão corretas e faz a contagem da pontuação final recebida pela pessoa estudante. 
+//Ao final a HOF deve retornar o total da contagem de respostas certas.
+//Quando a resposta for correta a contagem sobe 1 ponto, quando for incorreta desce 0.5 pontos, e quando não houver resposta ("N.A") não altera-se a contagem.
+
+
+
+
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['C', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const comparaAsRespostas = (respostasCertas, respostasAluno) => {
+    if (respostasAluno === respostasCertas) {
+        return 1;
+    } if (respostasAluno === 'N.A') {
+        return 0;
+    }
+    return -0.5;
+};
+
+const contadorPontos = (respostasCertas, respostasAluno, callback) => {
+    let contador = 0;
+    for (let i = 0; i < respostasCertas.length; i += 1) {
+        const retornoComparacao = callback(respostasCertas[i], respostasAluno[i]);
+        contador += retornoComparacao;
+    }
+    return `acertei deu ${contador}`;
+};
+
+console.log(contadorPontos(RIGHT_ANSWERS, STUDENT_ANSWERS, comparaAsRespostas));
+
+// TENTA 2 DE NOVO
+
+
+const checagemDosNumeros = (numeroApostado, numeroSorteado) => {
+    if(numeroSorteado === numeroApostado) {
+        return true
+    }
+};
+
+const resultadoMegaSena = (numeroApostado, callback) => {
+    const sorteiaNumero = Math.floor((Math.random() * 5) + 1);
+    const respostaDaChecagem = callback(numeroApostado, sorteiaNumero);
+    if(respostaDaChecagem === true) {
+            return "parabéns"
+        } 
+        return "looser"
+    };
+
+console.log(resultadoMegaSena(3, checagemDosNumeros));
