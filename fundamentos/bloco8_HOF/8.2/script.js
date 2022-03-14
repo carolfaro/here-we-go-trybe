@@ -101,4 +101,4 @@ const estudantes = [
       return acumulador;
   };
 
-  const vamosVer = estudante.reduce(verificaNota(acumulador.))
+
