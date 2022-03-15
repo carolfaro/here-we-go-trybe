@@ -62,20 +62,17 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
+  // 7. Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário.
 
-  // 2 - Retorne o nome do livro de menor nome.
-  // Dica: use a função forEach .
-
-  function smallerName() {
-    let nameBook;
-    books.forEach((element) => {
-        if (!nameBook || element.name.length < nameBook.length) {
-            nameBook = element.name;
-        }
-    })
-    return nameBook;
+  
+  function authorUnique() {
+      return books.every((element) =>
+      !books.some((element2) =>
+      (element2.author.birthYear === element.author.birthYear) && (element2.author.birthYear !== element.author.birthYear)));
   }
 
-
-  console.log(smallerName())
-  //const elementosBooks = books.forEach((element) => console.log(element.author.name));
+  console.log(authorUnique())
+  // nenhum: EVERY => verifica se todos tem a mesma condição.
+  // qual condição? => element.author.birthYear === 
+  // ano de nascimento de cada autor
+  // element.author.birhtYear 

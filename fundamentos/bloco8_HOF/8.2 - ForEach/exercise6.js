@@ -62,20 +62,15 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
-
-  // 2 - Retorne o nome do livro de menor nome.
-  // Dica: use a função forEach .
-
-  function smallerName() {
-    let nameBook;
-    books.forEach((element) => {
-        if (!nameBook || element.name.length < nameBook.length) {
-            nameBook = element.name;
-        }
-    })
-    return nameBook;
-  }
+  // 6 - Faça uma função que retorne true , se algum livro foi lançado na década de 80, e false , caso contrário.
 
 
-  console.log(smallerName())
-  //const elementosBooks = books.forEach((element) => console.log(element.author.name));
+
+function someBookWasReleaseOnThe80s() {
+  return books.some((element) => (element.releaseYear >= 1980 && element.releaseYear <= 1989) ? true : false)
+}
+
+console.log(someBookWasReleaseOnThe80s());
+
+// livro da década de 80
+// element.releaseYear >= 1980 1989

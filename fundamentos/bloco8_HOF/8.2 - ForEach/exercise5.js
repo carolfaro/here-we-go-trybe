@@ -63,19 +63,15 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-  // 2 - Retorne o nome do livro de menor nome.
-  // Dica: use a função forEach .
+  //5 - Faça uma função que retorne true , se todas as pessoas autoras nasceram no século XX, ou false , caso contrário.
 
-  function smallerName() {
-    let nameBook;
-    books.forEach((element) => {
-        if (!nameBook || element.name.length < nameBook.length) {
-            nameBook = element.name;
-        }
-    })
-    return nameBook;
-  }
+ 
 
+    function everyoneWasBornOnSecXX() {
+        return books.every((element) => (element.author.birthYear >= 1900 && element.author.birthYear <= 2000) ? true : false);
+    }
 
-  console.log(smallerName())
-  //const elementosBooks = books.forEach((element) => console.log(element.author.name));
+    console.log(everyoneWasBornOnSecXX())
+    // pessoas autoras: element.author.name
+    // data de nascimento: element.author.birthYear
+    // século 19 => de 1800 até 1899

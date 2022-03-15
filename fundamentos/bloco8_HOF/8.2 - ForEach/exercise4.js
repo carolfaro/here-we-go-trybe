@@ -63,19 +63,11 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-  // 2 - Retorne o nome do livro de menor nome.
-  // Dica: use a função forEach .
+// 4. Ordene os livros por data de lançamento em ordem decrescente.
 
-  function smallerName() {
-    let nameBook;
-    books.forEach((element) => {
-        if (!nameBook || element.name.length < nameBook.length) {
-            nameBook = element.name;
-        }
-    })
-    return nameBook;
+function booksOrderedByReleaseYearDesc() {
+    books.sort((elemA, elemB) => elemB.releaseYear - elemA.releaseYear);
   }
 
-
-  console.log(smallerName())
-  //const elementosBooks = books.forEach((element) => console.log(element.author.name));
+console.log(booksOrderedByReleaseYearDesc())
+console.log(books)
