@@ -117,7 +117,7 @@ const vamosVer = numbers3.find(divisivelpor3e5);
 
 console.log(vamosVer);
 
-// ex 9
+// ex 9 FIND
 // Utilize o find para encontrar o primeiro nome com cinco letras, caso ele exista:
 
 const names = ['João', 'Irene', 'Fernando', 'Maria'];
@@ -131,3 +131,66 @@ const encontraNome = (element, index) => {
 
 const encontraNomeC = names.find(encontraNome);
 console.log(encontraNomeC)
+
+// ex 10 FIND
+// Utilize o find para encontrar a música com id igual a 31031685 , caso ela exista:
+
+const musicas = [
+    { id: '31031685', title: 'Partita in C moll BWV 997' },
+    { id: '31031686', title: 'Toccata and Fugue, BWV 565' },
+    { id: '31031687', title: 'Chaconne, Partita No. 2 BWV 1004' },
+  ]
+  
+  // Utilize o find para encontrar a música com id igual a 31031685 , caso ela exista:
+  function findMusic(id) {
+    return musicas.find((element) => element.id === id);
+}
+  
+  console.log(findMusic('31031685'))
+
+
+//SOME 
+// EXEMPLO 1
+// testa se ao menos um dos elementos no array passa no teste implementado pela função atribuída e retorna um valor true ou false.
+// AO MENOS UM
+
+[2, 5, 8, 1, 4].some(elem => elem > 10);  // false
+[12, 5, 8, 1, 4].some(elem => elem > 10); // true
+
+// EXEMPLO 2
+// usa o some para verificar se possui algum nome que começa com a letra desejada:
+const listNames = ['Maria', 'Manuela', 'Jorge', 'Ricardo', 'Wilson'];
+
+// funcao para verificar começo do nome
+// verifica se essa condição é verdadeira
+const verificaLetra = (letra, nomes) => nomes.some((element) => element[0] === letra);
+
+console.log(verificaLetra('J', listNames));
+
+//OBS abaixo element[0] pega a primeira letra de cada elemento
+const verificaSome = listNames.some((element) => console.log(element[0]));
+
+
+
+// EVERY
+
+//EXEMPLO 1
+// testa se todos os elementos do array passam pelo teste implementado pela função fornecida.
+// TESTA SE TODOS TEM A MESMA CONDIÇÃO
+
+[12, 5, 8, 130, 44].every(elem => elem >= 10); // false
+[12, 54, 18, 130, 44].every(elem => elem >= 10); // true
+
+// EXEMPLO 2
+// O exemplo abaixo usará o every para verificar se o estudante passou em todas as matérias:
+const grades = {
+    portugues: 'Aprovado',
+    matematica: 'Reprovado',
+    ingles: 'Aprovado',
+  };
+
+const passou = (notas) => (
+    Object.values(notas).every((materias) => materias === 'Aprovado')
+);
+
+console.log(passou(grades))
