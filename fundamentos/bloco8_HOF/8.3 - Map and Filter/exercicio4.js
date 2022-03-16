@@ -59,34 +59,15 @@ const books = [
       },
       releaseYear: 1928,
     },
-  ];
-  
-  // Adicione o código do exercício aqui:
+];
 
-  function nameAndAge() {
-    return books.map(element =>({
-      author: element.author.name,
-      age: element.releaseYear - element.author.birthYear
-    })).sort((a, b) => a.age - b.age)
-  } 
+// 4 - Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
+// livros com mais de 60 anos de pulbicação: 2022 - element.releaseYear
 
-  console.log(nameAndAge())
+// Dica: use as funções filter e sort
 
-  function nameAndAge() {
-    return books
-    .map(element =>({ // desde .map
-      author: element.author.name,
-      age: element.releaseYear - element.author.birthYear
-    }))
-    .sort((a, b) => a.age - b.age) // desce .sort
-  } 
+function oldBooksOrdered() {
+    return books.filter((element) => element.releaseYear <= 1962).sort((a, b) => a.releaseYear - b.releaseYear);
+  };
 
-
- 
-
-  // 2 - Construa um array de objetos a partir do array de livros.
-  // Cada objeto deve conter uma propriedade author , com o nome da pessoa autora do livro, 
-  // e uma propriedade age com a idade dessa pessoa quando o livro foi lançado. 
-  // O array deve ser ordenado por idade, ou seja, da pessoa mais jovem para a mais velha considerando 
-  // suas idades quando o livro foi lançado.
-  //Dica: use as funções map , sort
+  console.log(oldBooksOrdered())
