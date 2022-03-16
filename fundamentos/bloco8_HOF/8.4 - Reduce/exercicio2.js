@@ -59,12 +59,16 @@ const books = [
       },
       releaseYear: 1928,
     },
-];
+  ];
+  
+  // Adicione o código do exercício aqui:
+  // 2 - Crie uma string com os nomes de todas as pessoas autoras.
+  // const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
+  // author.name => element.author.name
 
-// 5 - Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
-
-function fantasyOrScienceFictionAuthors() {
-    return books.filter((element)=> element.genre === element.genre)
+function reduceNames() {
+  return books.reduce((acc, e) => acc += `${e.author.name} `, '')
 };
 
-  console.log(fantasyOrScienceFictionAuthors())
+console.log(reduceNames())
+console.log(typeof reduceNames())

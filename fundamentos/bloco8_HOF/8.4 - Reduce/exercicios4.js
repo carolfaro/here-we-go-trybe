@@ -59,12 +59,28 @@ const books = [
       },
       releaseYear: 1928,
     },
-];
+  ];
+  
+  // Adicione o código do exercício aqui:
 
-// 5 - Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
+  // 4 - Encontre o livro com o maior nome.
 
-function fantasyOrScienceFictionAuthors() {
-    return books.filter((element)=> element.genre === element.genre)
-};
+// const expectedResult = {
+//   id: 1,
+//   name: 'As Crônicas de Gelo e Fogo',
+//   genre: 'Fantasia',
+//   author: {
+//     name: 'George R. R. Martin',
+//     birthYear: 1948,
+//   },
+//   releaseYear: 1991,
+// };
 
-  console.log(fantasyOrScienceFictionAuthors())
+// livro com o maior nome => elem.name
+
+function longestNamedBook() {
+  return books.reduce((acc, elem) => (acc.name.length > elem.name.length) ? acc : elem)
+}
+
+console.log(longestNamedBook())
+
