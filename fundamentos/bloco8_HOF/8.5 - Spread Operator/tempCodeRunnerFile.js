@@ -1,0 +1,1 @@
+const filterPeople = () => people.filter((element) => element.nationality === 'Australian' && element.bornIn < 2000);

@@ -11,3 +11,4 @@ const arrays = [
   };
 
   console.log(flatten())
+  console.log(arrays)
