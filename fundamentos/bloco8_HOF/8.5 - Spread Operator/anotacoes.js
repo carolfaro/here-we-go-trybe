@@ -79,4 +79,42 @@ const character = {
 // Depois de feito, precisamos imprimir essas informações no console.log() , para isso, vamos utilizar a desestruturação de objetos:
 
 const { nome1, age, homeWorld: { name: planet}, description: { jedi } } = character;
+console.log(homeWorld);
+
+
+const data = require("../data/zoo_data");
+
+const allEmployees = data.employees;
+const stephanieId = "9e7d4524-363c-416a-8759-8aa7e50c0992";
+const olaId = "fdb2543b-5662-46a7-badc-93d960fdc0a8";
+const burlId = "0e7b460e-acf4-4e17-bcb3-ee472265db83";
+
+// https://desenvolvimentoparaweb.com/javascript/every-some-find-includes-javascript/
+// filter com includes acessa o fundionário(element) e procura dentro da chave managers o array que inclui o id do gerente, achando
+// o funcionário que tem esse id incluido.
+// o map no funcionário cria um array com o nome dele.
+
+function employessManager(idgerente) {
+  const findEmployees = allEmployees.filter((element) => element.managers.includes(idgerente));
+  return findEmployees.map((element) => `${element.firstName} ${element.lastName}`);
+}
+
+// FUNCÇAO QUE VERIFICA SE É GERENTE
+function isManager(managerId) {
+  // seu código aqui
+  if (managerId === stephanieId || managerId === olaId || managerId === burlId) {
+    return true;
+  }
+  return false;
+}
+
+function getRelatedEmployees(managerId) {
+  // seu código aqui
+  if (isManager(managerId) === true) {
+    employessManager(managerId);
+  }
+  throw new Error('O id inserido não é de uma pessoa colaboradora gerente!');
+}
+
+module.exports = { isManager, getRelatedEmployees };
 

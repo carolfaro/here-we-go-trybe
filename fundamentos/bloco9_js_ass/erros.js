@@ -1,3 +1,6 @@
+// Ou seja, da mesma forma que se tem uma callback para quando a operação assíncrona tem sucesso, 
+// também precisaria ter uma callback para quando a operação assíncrona termina com erro.
+
 const countryName = ({ name }) => console.log(`Returned country is ${name}`);
 const countryCurrency = ({ name, currency }) => console.log(`${name}'s currency is the ${currency}`);
 
@@ -17,6 +20,7 @@ const getCountry = (onSuccess, callback) => {
       onSuccess(country);
     } else {
       const errorMessage = "Country could not be found";
+      callback(errorMessage);
     }
   }, delay());
 };
