@@ -12,8 +12,8 @@ class Cores extends React.Component {
         this.state = {filtro: 'xxx'}
     }
 
-    handleChange(){
-
+    handleChange(event){
+        console.log(event.target.value)
     }
 
     render(){
@@ -23,7 +23,7 @@ class Cores extends React.Component {
                 <hr/>
                 <h2>Minhas cores</h2>
                 <h3>Meu filtro é {this.state.filtro}</h3>
-                <input type="text" value="" onChange={(e) => console.log(e.target.value)} />
+                <input type="text" value="" onChange={(e) => this.handleChange(e)} />
             </div>
             <div>
                 <ul>
