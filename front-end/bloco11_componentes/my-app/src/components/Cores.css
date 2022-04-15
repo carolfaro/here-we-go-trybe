@@ -28,4 +28,10 @@
 
 #black{
     background-color: rgba(0, 0, 0, 0.314);
+    color:beige;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
 }

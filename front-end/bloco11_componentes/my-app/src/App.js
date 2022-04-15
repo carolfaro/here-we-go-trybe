@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>meu componente de cores</h1>
+        <h1>escolha uma cor</h1>
       </header>
       <Cores />
     </div>

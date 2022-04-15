@@ -40,12 +40,10 @@ class Cores extends React.Component {
                 <input type="text" value={this.state.filtro} 
                 onChange={this.handleChange} />
             </div>
-            <div>
-                <ul className="ul1">
+            <div id="container1">
                     {colors
                     .filter((ele) => this.state.filtro === '' || ele.name.includes(this.state.filtro))
-                    .map((element) => <li id={element.name}key={element.name}>{element.name}</li>)}
-                </ul>
+                    .map((element) => <span id={element.name}key={element.name}>{element.name}</span>)}
             </div>
         </div>
         )
