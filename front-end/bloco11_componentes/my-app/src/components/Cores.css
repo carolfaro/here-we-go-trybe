@@ -1,0 +1,31 @@
+.titulo {
+    background-color: darkgrey;
+}
+
+#red {
+    background-color: rgba(182, 69, 69, 0.923);
+}
+
+#green {
+    background-color: rgb(0, 128, 100);
+}
+
+#blue {
+    background-color: rgb(167, 204, 243);
+}
+
+#cyan {
+    background-color: rgb(136, 195, 222);
+}
+
+#magenta {
+    background-color: rgb(169, 70, 186);
+}
+
+#yellow {
+    background-color: rgb(232, 243, 167);
+}
+
+#black{
+    background-color: rgba(0, 0, 0, 0.314);
+}
