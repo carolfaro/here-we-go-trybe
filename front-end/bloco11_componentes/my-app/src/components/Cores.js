@@ -14,6 +14,9 @@ class Cores extends React.Component {
 
     handleChange(event){
         console.log(event.target.value)
+        this.setState({
+            filtro: event.target.value
+        })
     }
 
     render(){
