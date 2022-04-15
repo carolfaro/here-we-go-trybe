@@ -10,23 +10,28 @@ class Cores extends React.Component {
     constructor(props){
         super(props)
         this.state = {filtro: 'xxx'}
+
+        this.handleChange = this.handleChange.bind(this)
     }
 
     handleChange(event){
-        console.log(event.target.value)
+        console.log(this)
         this.setState({
             filtro: event.target.value
         })
     }
 
     render(){
+        // onChange={(e) => this.handleChange(e)}
+        // onChange={this.handleChange}
         return(
         <div>
             <div>
                 <hr/>
                 <h2>Minhas cores</h2>
                 <h3>Meu filtro é {this.state.filtro}</h3>
-                <input type="text" value={this.state.filtro} onChange={(e) => this.handleChange(e)} />
+                <input type="text" value={this.state.filtro} 
+                onChange={this.handleChange} />
             </div>
             <div>
                 <ul>
