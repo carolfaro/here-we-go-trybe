@@ -8,35 +8,49 @@ class Login extends React.Component {
             email: '',
             password: '',
         }
-        this.handleEmail = this.handleEmail.bind(this)
-        this.handlePassword = this.handlePassword.bind(this)
-        this.handleInput = this.handleInput.bind(this)
+        // this.handleEmail = this.handleEmail.bind(this)
+        // this.handlePassword = this.handlePassword.bind(this)
+
+        // this.handleInput = this.handleInput.bind(this)
     }
 
-    handleEmail(e){
-        const key = 'email';
-        const { value } = e.target;
-        this.setState({
-            [key]: value,
-        })
+    // handleEmail(e){
+    //     const key = 'email';
+    //     const { value } = e.target;
+    //     this.setState({
+    //         [key]: value,
+    //     })
 
-    }
+    // }
 
-    handlePassword(e){
-        const { value } = e.target;
-        this.setState({
-            password: value,
-        })
-    }
+    // handlePassword(e){
+    //     const { value } = e.target;
+    //     this.setState({
+    //         password: value,
+    //     })
+    // }
 
-    handleInput(e){
+    // handleInput(e){
+    //     console.log(this)
+    //     const key = e.target.name;
+    //     const { value } = e.target;
+    //     this.setState({
+    //         [key]: value,
+    //     })
+    // }
+
+    // abaixo fazendo uma arrow function não precisamos do bind
+    // pq a arrow function copia o this
+    handleInput = (e) => {
+        console.log(this)
         const key = e.target.name;
         const { value } = e.target;
         this.setState({
             [key]: value,
         })
-
     }
+
+    // tudo declarado acima do RENDER() vira uma propriedade da classe
 
     render() {
         const { email, password } = this.state;
@@ -51,6 +65,7 @@ class Login extends React.Component {
                     type="email"
                     name="email"
                     value={ email} 
+                    // onChange={ (e) => this.handleInput(e) }
                     onChange={ this.handleInput } />
                 </label>
                 <p></p>
@@ -60,6 +75,7 @@ class Login extends React.Component {
                     name="password"
                     type="password"
                     value={ password } 
+                    // onChange={ (e) => this.handleInput(e) }
                     onChange={ this.handleInput } />
                 </label>
             </form>
