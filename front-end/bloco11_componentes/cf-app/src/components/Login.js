@@ -8,14 +8,16 @@ class Login extends React.Component {
             email: '',
             password: '',
         }
-        this.handleChange = this.handleChange.bind(this)
+        this.handleEmail = this.handleEmail.bind(this)
         this.handlePassword = this.handlePassword.bind(this)
+        this.handleInput = this.handleInput.bind(this)
     }
 
-    handleChange(e){
+    handleEmail(e){
+        const key = 'email';
         const { value } = e.target;
         this.setState({
-            email: value,
+            [key]: value,
         })
 
     }
@@ -25,6 +27,15 @@ class Login extends React.Component {
         this.setState({
             password: value,
         })
+    }
+
+    handleInput(e){
+        const key = e.target.name;
+        const { value } = e.target;
+        this.setState({
+            [key]: value,
+        })
+
     }
 
     render() {
@@ -40,7 +51,7 @@ class Login extends React.Component {
                     type="email"
                     name="email"
                     value={ email} 
-                    onChange={ this.handleChange } />
+                    onChange={ this.handleInput } />
                 </label>
                 <p></p>
                 <label htmlFor='password'>
@@ -49,7 +60,7 @@ class Login extends React.Component {
                     name="password"
                     type="password"
                     value={ password } 
-                    onChange={ this.handlePassword } />
+                    onChange={ this.handleInput } />
                 </label>
             </form>
         </section>)
