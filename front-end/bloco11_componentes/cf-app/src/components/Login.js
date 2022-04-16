@@ -1,4 +1,6 @@
 import React from 'react'
+import Email from './Email'
+import MeuInput from './MeuInput'
 
 class Login extends React.Component {
     
@@ -7,40 +9,11 @@ class Login extends React.Component {
         this.state ={
             email: '',
             password: '',
+            nome: '',
         }
-        // this.handleEmail = this.handleEmail.bind(this)
-        // this.handlePassword = this.handlePassword.bind(this)
-
-        // this.handleInput = this.handleInput.bind(this)
     }
 
-    // handleEmail(e){
-    //     const key = 'email';
-    //     const { value } = e.target;
-    //     this.setState({
-    //         [key]: value,
-    //     })
-
-    // }
-
-    // handlePassword(e){
-    //     const { value } = e.target;
-    //     this.setState({
-    //         password: value,
-    //     })
-    // }
-
-    // handleInput(e){
-    //     console.log(this)
-    //     const key = e.target.name;
-    //     const { value } = e.target;
-    //     this.setState({
-    //         [key]: value,
-    //     })
-    // }
-
-    // abaixo fazendo uma arrow function não precisamos do bind
-    // pq a arrow function copia o this
+  // escrita do estado
     handleInput = (e) => {
         console.log(this)
         const key = e.target.name;
@@ -50,34 +23,35 @@ class Login extends React.Component {
         })
     }
 
-    // tudo declarado acima do RENDER() vira uma propriedade da classe
 
     render() {
-        const { email, password } = this.state;
+        const { email, password, nome } = this.state;
 
+        
         return (
         <section>
             <h2>Login</h2>
             <form>
-                <label htmlFor='email'>
-                    email 
-                    <input 
-                    type="email"
-                    name="email"
-                    value={ email} 
-                    // onChange={ (e) => this.handleInput(e) }
-                    onChange={ this.handleInput } />
-                </label>
-                <p></p>
-                <label htmlFor='password'>
-                    senha
-                    <input 
-                    name="password"
-                    type="password"
-                    value={ password } 
-                    // onChange={ (e) => this.handleInput(e) }
-                    onChange={ this.handleInput } />
-                </label>
+                <Email 
+                // email e onInputChange é uma prop q o pai passa pro filho
+                // por isso ela só é exportada lá, pq aqui ela é criada
+                email={ email } 
+                // this.handleInput leitura => passando a leitura pro filho via prop onInputChange
+                onInputChange={ this.handleInput } />
+                <MeuInput 
+                text={"password:"}
+                name="password"
+                type="password"
+                value={ password }
+                onInputChange={ this.handleInput }
+                />
+                 <MeuInput 
+                text={"nome:"}
+                name="nome"
+                type="text"
+                value={ nome }
+                onInputChange={ this.handleInput }
+                />
             </form>
         </section>)
 

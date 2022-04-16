@@ -11,7 +11,6 @@ function App() {
       </header>
       <main className="main1">
         <Login />
-        {/* <section>Cadastro</section> */}
       </main>
     </div>
   );
