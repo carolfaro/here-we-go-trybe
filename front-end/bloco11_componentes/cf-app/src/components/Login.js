@@ -5,9 +5,11 @@ class Login extends React.Component {
     constructor(){
         super()
         this.state ={
-            email: 'oi?',
+            email: '',
+            password: '',
         }
         this.handleChange = this.handleChange.bind(this)
+        this.handlePassword = this.handlePassword.bind(this)
     }
 
     handleChange(e){
@@ -18,8 +20,15 @@ class Login extends React.Component {
 
     }
 
+    handlePassword(e){
+        const { value } = e.target;
+        this.setState({
+            password: value,
+        })
+    }
+
     render() {
-        const { email } = this.state;
+        const { email, password } = this.state;
 
         return (
         <section>
@@ -27,7 +36,20 @@ class Login extends React.Component {
             <form>
                 <label htmlFor='email'>
                     email 
-                    <input name={ email} value="" onChange={ this.handleChange } />
+                    <input 
+                    type="email"
+                    name="email"
+                    value={ email} 
+                    onChange={ this.handleChange } />
+                </label>
+                <p></p>
+                <label htmlFor='password'>
+                    senha
+                    <input 
+                    name="password"
+                    type="password"
+                    value={ password } 
+                    onChange={ this.handlePassword } />
                 </label>
             </form>
         </section>)
