@@ -1,6 +1,7 @@
 import React from 'react'
 import logocf from './logocf.png'
 import './App.css';
+import Login from './components/Login'
 
 function App() {
   return (
@@ -9,8 +10,8 @@ function App() {
         <img src={ logocf } alt="" srcSet="" />
       </header>
       <main className="main1">
-        <section>Login</section>
-        <section>Cadastro</section>
+        <Login />
+        {/* <section>Cadastro</section> */}
       </main>
     </div>
   );
