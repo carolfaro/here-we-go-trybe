@@ -16,11 +16,18 @@ class DadJoke extends React.Component {
 
   async fetchJoke() {
     this.setState(
-    { loading: true }, 
-    async () => { 
+    { loading: true }, // primeiro param da setState()
+    async () => { // calback e retorno oq eu quiser
+    // objeto para receber dados da api => um lugar para ela ficar
+    // const requestHeaders = 'fique aqui'
     const requestHeaders = { headers: { accept: 'application/json' } }
+    // faz a fetch => 'venha minha filha, já tem um lugar pra vc ficar' => ele retorna uma promisse => 'estou pensando se vou'
+    // const requestHeaders = await fetch('venha minha filha', lugar pra vc ficar)
     const requestReturn = await fetch('https://icanhazdadjoke.com/', requestHeaders)
+    // ela diz => 'estou pensando se vou' => promisse
     const requestObject = await requestReturn.json()
+    // const requestObjetc = agora que chegou venha em json()
+    // const requestObjetc = dados pronstos para uso
     this.setState({
       loading: false,
       jokeObj: requestObject
@@ -33,6 +40,7 @@ class DadJoke extends React.Component {
   }
 
   saveJoke() {
+    //Esse método será responsável por salvar a piada no array de piadas storedJokes!!
     this.setState(({ storedJokes, jokeObj }) => ({
       storedJokes: [ ...storedJokes, jokeObj ]
     }));
@@ -51,7 +59,7 @@ class DadJoke extends React.Component {
   }
 
   render() {
-    const { storedJokes, loading } = this.state;
+    const { storedJokes, jokeObj, loading } = this.state;
     const loadingElement = <span>Loading...</span>;
 
     return (
@@ -61,6 +69,17 @@ class DadJoke extends React.Component {
         </span>
 
         <p>{loading ? loadingElement : this.renderJoke()}</p>
+
+      {
+        /*
+        Aqui vamos construir nossa lógica com uma renderização condicional
+        do nosso componente Joke, a ideia é renderizar um loading enquanto
+        esperamos a nossa requisição de piadas finalizar.
+
+        <p>RENDERIZAÇÃO CONDICIONAL</p>
+        */
+      }
+
       </div>
     );
   }
