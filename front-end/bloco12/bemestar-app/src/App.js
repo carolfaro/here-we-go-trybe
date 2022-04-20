@@ -6,14 +6,14 @@ import Time from './components/Time';
 class App extends React.Component {
   constructor(){
     super();
-    console.log('constructor')
+    console.log('constructor pai')
     this.state = {
       timer: false
     };
   }
 
   componentDidMount(){
-    console.log('componentDidMount')
+    console.log('componentDidMount pai')
   }
 
   // componentWillUnmount() {
@@ -30,7 +30,7 @@ class App extends React.Component {
     this.setState((prevState) => ({
       timer: !prevState.timer,
     }))
-  console.log('trocando o timer')
+  console.log('clicou atualizou o state')
   }
 
   renderTimer(){
@@ -42,7 +42,7 @@ class App extends React.Component {
   }
 
   render(){
-    console.log('render')
+    console.log('render pai')
 
     const { timer } = this.state;
 
