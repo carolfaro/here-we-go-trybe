@@ -1,6 +1,6 @@
 import React from 'react';
-import Visualizacao from './components/Children';
 import Header from './components/Header'
+import Text from './components/Text';
 
 class App extends React.Component {
   constructor(){
@@ -23,8 +23,9 @@ class App extends React.Component {
       <header className="App-header">
       <Header toogleSideBar={this.toogleSideBar} />
       </header>
-      <Visualizacao />
-
+      <h1> AQUI ESTÁ UMA PÁGINA VINDA DE NÁRNIA</h1>
+      {/* <Visualizacao /> */}
+    {sidebar && <Text />}
     </div>
   );
 }
